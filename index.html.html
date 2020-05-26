@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" >
+		<title>KOT - Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+				<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+		<!-- Google Fonts -->
+				<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:100,200,300,400,600,500,700,800,900|Nunito+Sans:100,200,300,400,500,600,700,800,900&amp;subset=latin" rel="stylesheet">
+				<!-- Bootstrap 4.3.1 CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<!-- Slick 1.8.1 jQuery plugin CSS (Sliders) -->
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+		<!-- Fancybox 3 jQuery plugin CSS (Open images and video in popup) -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+		<!-- AOS 2.3.4 jQuery plugin CSS (Animations) -->
+		<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+		<!-- FontAwesome CSS -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<!-- Startup 3 CSS (Styles for all blocks) -->
+					<link href="css/style.css" rel="stylesheet" />
+				<!-- jQuery 3.3.1 -->
+		<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        
+    </head> 
+<body>
+    
+<!--Version 2.0 Navigation bar for logged in members-->
+<nav class="navigation_1 pt-15 pb-0 bg-dark color-white fixed-top  ">
+	<div class="container px-xl-0">
+        <div class="row justify-content-center align-items-center mb-15">
+			
+            <div class="col-lg-3 text-lg-left" data-aos-duration="500" data-aos="fade-down" data-aos-delay="250">
+				<div class="link" style="width:100px; height:40px" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>We hope you like KOT as much as we like you<i class='ml-10 fas fa-kiss-wink-heart'></i></div>">
+                    <img src="assets/Kot_logo.svg">
+                </div>
+			</div>
+            
+			<div class="col-lg-6 js-nav-dropdowns text-center" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0" style="margin-top:-1px">
+                <div class="container">
+                    <div class="row">
+                        <div class="col w-100">
+                          <a href="user_for_sale.html" class="w-100 link color-topmenu-selected f-28 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Properties for sale</div>">
+                                <i class="fas fa-sign"></i>
+                                <div class="menu-selected"></div>
+                            </a>
+                        </div>
+                        
+                        <div class="col w-100">
+                          <a href="user_events.html" class="w-100 link color-topmenu f-26 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Events</div>">
+                                <i class="fas fa-bell"></i>
+                          </a>
+                          <div class="menu_unread">3</div>
+                        </div>
+                        
+                        <div class="col w-100">
+                            <a href="user_watchlist.html" class="w-100 link color-topmenu f-26 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Watchlist</div>">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="col w-100">
+                            <a href="user_listings.html" class="w-100 link color-topmenu f-26 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>My listings</div>">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </div>
+                        
+                        <div class="col w-100">
+                            <a href="user_services.html" class="w-100 link color-topmenu f-26 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Services for hire</div>">
+                                <i class="fas fa-concierge-bell"></i>
+                            </a>
+                        </div>
+                        
+                      </div>
+                    </div>
+                
+                
+                
+
+
+
+                
+			</div>
+			
+            <div class="col-lg-3 d-flex flex-wrap justify-content-right justify-content-lg-end align-items-right js-nav-dropdowns" data-aos-duration="500">
+                <a href="#" class="mr-15 link color-topmenu js-open-nav-dropdown f-20 semibold" style="margin-top:5px">
+                    Sveinn<i class="ml-5 fa fa-chevron-down"></i>
+                </a>  
+                <a href="user_support.html" class="mx-15 btn sm border-transparent-white f-20 semibold" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Can't find what you are looking for? Contact our support</div>">
+                    <i class="fas fa-question"></i>
+                </a>
+			</div>
+            
+		</div>
+	</div>
+    
+    
+    
+	<!-- Navigation popup -->
+	<div class="pt-15 bg-dark navigation_popup" style="z-index:100; top:auto">
+		<div class="container px-xl-0">
+			<div class="row justify-content-center justify-content-lg-start text-center text-lg-left">
+				<div class="mb-40 col-xl-2 col-lg-3 col-md-5 col-sm-6">
+					<a href="user_profile.html" class="mt-20 d-block link color-white f-18 semibold title">Account settings</a>
+					<div class="mt-2 f-14 medium op-7 text-adaptive">
+						Contact information<br>Account details<br></div>
+				</div>
+				<div class="d-none d-xl-block col-xl-1"></div>
+				<div class="mb-40 col-xl-2 col-lg-3 col-md-5 col-sm-6">
+					<a href="user_notifications_settings.html" class="mt-20 d-block link color-white f-18 semibold ">Notifications</a>
+					<div class="mt-2 f-14 medium op-7 text-adaptive">
+				       Set which notifications to receive
+                    </div>
+				</div>
+				<div class="d-none d-xl-block col-xl-1"></div>
+				<div class="mb-40 col-xl-2 col-lg-3 col-md-5 col-sm-6">
+					
+					<a href="user_transaction_history.html" class="mt-20 d-block link color-white f-18 semibold title">Transaction history</a>
+					<div class="mt-2 f-14 medium op-7 text-adaptive">
+						Payments<br>
+                        Purchased services</div>
+				</div>
+                
+                <div class="d-none d-xl-block col-xl-1"></div>
+				<div class="mb-40 col-xl-2 col-lg-3 col-md-5 col-sm-6">
+                    <div class="vertical_line_header_menu"></div>	
+					<a href="user_faq.html" class="mt-20 d-block link color-white f-18 semibold title" data-toggle="tooltip" data-html="true" data-placement="left" title="<div class='f-18 semibold'>Frequently asked questions</div>">F.A.Q.</a>
+					<div class="mt-2 f-14 medium text-adaptive">
+                        <a href="kot_home.html" class=" link color-pink f-18 bold" data-toggle="tooltip" data-html="true" data-placement="left" title="<div class='f-18 semibold'>We hope to see you again soon. Have a great day<i class='ml-10 fas fa-thumbs-up'></i></div>">Sign out</a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!--end of Navigation bar-->
+        
+
+
+        
+	
+        
+<!-- Page menu--> 
+<section class="bg-light contact_6"> 
+	<div class="container px-xl-0">
+        <div class="row mt-15 mb-10">
+            
+            <!-- Property address--> 
+            <div class="col-xl-5">
+                <div class="text-adaptive f-22 semibold color-black op-7" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150" >Barmahlíð 33</div>            
+            </div>
+            
+            <!-- Menu options--> 
+            <div class="col-xl-7">
+                <div class="row color-heading semibold ">
+                    <div class="col text-right no-gutters">            
+                        <div class="text-adaptive color-heading f-18 " data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">
+                            <a href="user_property_messages.html" class="color-main" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Write seller(s)</div>">
+                                <i class="fas fa-user-edit mr-10"></i>Message
+                            </a>
+                            <a href="user_property_messages.html" class="ml-20 color-pink" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Place a bid for the property</div>">
+                                <i class="fas fa-file-alt mr-10"></i>Make a bid
+                            </a>                            
+                            <a href="user_property_messages.html" class="ml-20 color-main" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Open house May 21st 21:00 Check for open-house availability or request an appointment</div>">
+                                <i class="fas fa-door-open mr-10"></i>Open house
+                            </a>                             
+                            <a href="user_property_services.html" class="ml-20 color-main" data-toggle="tooltip" data-html="true" data-placement="bottom" title="<div class='f-18 semibold'>Be notified about changes to this listing</div>">
+                                <i class="fas fa-heart mr-10"></i>Save
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hr bg-gray h-1"></div>
+    </div>
+</section>    
+</nav>
+
+ 
+    
+
+<!-- Informationn segment. It's content changes on mouse hover over dashboard optionns. SEGMENT 1 : FOR SALE -->
+<section class="pt-40 pb-20 bg-light feature_40">
+    <div class="container px-xl-0">
+		<div class="row justify-content-center">
+			<div class="col-xl-12">
+                <h3 class="text-left mb-20" data-aos-duration="600" data-aos="fade-down" data-aos-delay="150">Dashboard</h3>
+            </div>
+		</div>
+	</div>
+</section>
+    
+    
+        
+<!-- USER DASHBOARD-->
+
+<section class="pt-20 pb-40 bg-light color-filter-light-4 text-center header_8">
+    <style>
+		.header_8{background-image:url(assets/images/dashboard_background.jpg);}
+		@media(-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi){
+			.header_8{background-image:url(assets/images/dashboard_background.jpg);}
+		}
+	</style>
+	<div class="container px-xl-0">
+        
+		<div class="row justify-content-center no-gutters">
+			<div class="col-xl-12">
+				<div class="row justify-content-center">
+					
+                    <div class="col-sm-3 mb-70 mb-lg-0" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">
+                        <div class="mx-auto mt-25 f-80 lh-130 color-heading w-130 h-130 radius_full ">
+                            <a href="user_for_sale.html"><i class="fas fa-sign color-main w-50 h-50"></i></a>
+						</div>
+                        <div class="dashboard_overlay_unread_messages bg-red">2</div>
+                        <div class="f-30 semibold">For sale</div>
+                        <div class=" f-22  color-black">892 properties</div>
+                    </div>
+                    
+					<div class="col-sm-3 mb-70 mb-lg-0 " data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+                        <div class="mx-auto mt-25 f-80 lh-130 color-heading w-130 h-130 radius_full">
+                            <a href="user_events.html"><i class="fas fa-calendar-check color-main"></i></a>
+						</div>
+                        <div class="dashboard_overlay_unread_messages bg-red">8</div>
+						<div class="f-30 semibold ">Events</div>
+						
+					</div>
+                    
+					<div class=" col-sm-3 mb-70 mb-sm-0 " data-aos-duration="600" data-aos="fade-down" data-aos-delay="600">
+                        <div class="mx-auto mt-25 f-80 lh-130 color-heading w-130 h-130 radius_full">
+							<a href="user_watchlist.html"><i class="fas fa-map-marker-alt color-main"></i></a>
+						</div>
+                        <div class="dashboard_overlay_unread_messages bg-red">7</div>
+						<div class="f-30 semibold ">Watchlist</div>
+						
+					</div>
+                    
+					<div class=" col-sm-3 " data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+				        <div class="mx-auto mt-25 f-80 lh-130 color-yellow w-130 h-130 radius_full">
+							<a href="user_listings.html"><i class="fas fa-home  color-main"></i> </a>
+						</div>
+                        <div class="f-30 semibold">My listings</div>
+						<div class=" f-22  color-black ">2 properties on sale</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+    
+<!-- Your listing header-->
+<section class="bg-light application_21"> 
+	<div class="container px-xl-0">
+        
+	</div>
+</section>
+
+<!-- Informationn segment. It's content changes on mouse hover over dashboard optionns. SEGMENT 1 : FOR SALE -->
+<section class="pt-40 pb-95 bg-light color-dark feature_40">
+    <div class="container px-xl-0">
+		<div class="row justify-content-center">
+			<div class="col-xl-10">
+                <div class="mb-40 h2 bg-gray hr"></div>
+				<div class="row justify-content-between">
+					<div class="col-xl-7 col-md-6 mb-50 mb-md-0">
+						<!-- Listing header-->
+                        <div class="f-30 semibold  text-left" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0"><i class="fas fa-home mr-10"></i>My listings</div>
+                    <div class="mt-10 mb-20 hr bg-gray h-1" data-aos-duration="600" data-aos="fade-down" data-aos-delay="600"></div>
+						<div class="f-22 color-heading text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+							It's easy to list your property for sale on KOT. KOT even helps when it comes to describing your property and in less than 10 minutes your listing will be ready and looking professional.</div>
+				    </div>
+					<div class="col-md-5 col-sm-10 mt-15">
+						<div class="mb-35 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+							<div class="d-flex align-items-center f-22 bold">
+								<i class="fas fa-home lh-32 w-30 mr-15"></i><div>Add your property for sale</div>
+							</div>
+							<div class="ml-45 color-black op-7 text-adaptive">
+								Add a property, edit property details or remove your listing							</div>
+						</div>
+						<div class="mb-35 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="1200">
+							<div class="d-flex align-items-center f-22 bold">
+								<i class="fas fa-file-signature lh-32 w-30 mr-15"></i><div>Download contracts</div>
+							</div>
+							<div class="ml-45 color-black op-7 text-adaptive">
+								Access previous sale contracts and associated data in a single PDF.</div>
+						</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+        
+<!-- SEGMENT 2 : PROPERTY WATCHLIST -->
+<section class="pt-40 pb-95 bg-light color-dark feature_40">
+    <div class="container px-xl-0">
+		<div class="row justify-content-center">
+			<div class="col-xl-10">
+                
+				<div class="row justify-content-between">
+					<div class="col-xl-7 col-md-6 mb-50 mb-md-0">
+						<h2 class="mb-20 small" data-aos-duration="600" data-aos="fade-down" data-aos-delay="0">Don't miss out on your dream property</h2>
+						<div class="f-22 color-heading text-adaptive" data-aos-duration="600" data-aos="fade-down" data-aos-delay="300">
+				            Be the first to know when a property goes on sale in your preferred postal code or even pin it down to your dream street.
+                            <br><br>
+                            Once a property is listed in your watchlist location, we'll let you know
+                        </div>
+				    </div>
+					<div class="col-md-5 col-sm-10 mt-15">
+						<div class="mb-35 block" data-aos-duration="600" data-aos="fade-down" data-aos-delay="900">
+							<div class="mb-15 d-flex align-items-center f-22 title">
+								<i class="fas fa-map-marker-alt f-24 lh-32 w-30 mr-15"></i><div>The watchlist</div>
+							</div>
+							<div class="ml-45 text-adaptive">
+								Add or remove a street / postal code to your watchlist </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+    
+    
+    
+<!-- KOT Footer 1.2 -->
+<footer class="pt-75 pb-65 bg-light text-center footer_1">
+	<div class="container px-xl-0">
+		<div class="row justify-content-between align-items-center lh-40 links">
+			<div class="col-lg-4 col-sm-6 text-sm-right text-lg-left order-1 order-lg-0" data-aos-duration="500" data-aos="fade-down" data-aos-delay="250">
+				<a href="about.html" class="mr-15 link color-main">Um KOT.IO</a>
+				<a href="terms_of_use.html" class="mx-15 link color-main">Skilmálar</a>
+				<a href="user_faq.html" class="mx-15 link color-main">Spurt & svarað</a>
+			</div>
+			<div class="mb-10 mb-lg-0 col-lg-auto order-0" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">
+				<a href="#" class="logo link color-main">KOT.IO</a>
+			</div>
+			<div class="col-lg-4 col-sm-6 text-sm-left text-lg-right order-2 order-lg-0" data-aos-duration="500" data-aos="fade-down" data-aos-delay="250">
+				<a href="user_support.html" class="mr-15 link color-main">Hafa samband</a>
+				<a href="https://twitter.com/KOT46792393" class="mx-15 link color-main"><i class="fab fa-twitter"></i></a>
+				<a href="https://www.facebook.com/KotSocialHome" class="mx-15 link color-main"><i class="fab fa-facebook-square"></i></a>
+			</div>
+		</div>
+		<div class="row justify-content-center">
+			<div class="mt-10 col-xl-4 col-lg-5 col-md-6 col-sm-8" data-aos-duration="500" data-aos="fade-down" data-aos-delay="0">
+				<div class="color-heading text-adaptive">
+					KOT ehf. kt 440220-1340 <br>Skógarhlíð 12, 105 Reykjavík - 550-5300<br>Allur réttur áskilinn KOT ehf.
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+        
+    
+        
+<!-- forms alerts -->
+<div class="alert alert-success alert-dismissible fixed-top alert-form-success" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Thanks for your message!
+</div>
+<div class="alert alert-warning alert-dismissible fixed-top alert-form-check-fields" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	Please, fill in required fields.
+</div>
+<div class="alert alert-danger alert-dismissible fixed-top alert-form-error" role="alert">
+	<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	An error occurred while sending data :(
+</div>
+
+<!-- Bootstrap 4.3.1 JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<!-- Fancybox 3 jQuery plugin JS (Open images and video in popup) -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<!-- Google maps JS API -->
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyDP6Ex5S03nvKZJZSvGXsEAi3X_tFkua4U"></script>
+<!-- Slick 1.8.1 jQuery plugin JS (Sliders) -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<!-- AOS 2.3.4 jQuery plugin JS (Animations) -->
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<!-- Maskedinput jQuery plugin JS (Masks for input fields) -->
+<script src="js/jquery.maskedinput.min.js"></script>
+<!-- Startup 3 JS (Custom js for all blocks) -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
